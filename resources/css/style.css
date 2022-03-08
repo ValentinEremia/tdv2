@@ -11,6 +11,16 @@ body {
   /* padding: 5rem 0 0 0; */
   
 }
+
+p{
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 1vh;
+  /* padding: 1rem; */
+  color: rgb(182, 184, 192);
+}
+
 .logo{
   position: relative;
   width: 100%;
@@ -255,7 +265,7 @@ ul.todo li .buttons button svg .fill {
 }
 
 ul.todo li .buttons button.remove svg .fill {
-  fill: #c0cecb;
+  fill: #c0c7ce;
 }
 
 ul.todo li .buttons button.remove:hover svg .fill {
@@ -313,6 +323,7 @@ ul.todo#completed:after {
   body{
     padding: 9rem 0 0 0;
   }
+ 
 }
 
 @media only screen and(min-width: 920px){
@@ -324,4 +335,27 @@ ul.todo#completed:after {
   ul.todo:not(#completed) li .buttons button.complete:hover svg {
     background: #e1f37a;
   }
+}
+
+@media only screen and (max-height: 490px) {
+  
+  p{height: max-content;
+    font-size: 1.6rem;
+    margin-top: 2px;
+    
+    
+  }
+  
+
+}
+@media only screen and (max-height: 450px) {
+  
+  p{height: max-content;
+    font-size: 1rem;
+    
+    
+    
+  }
+  
+
 }
